@@ -1,8 +1,0 @@
-{
-  "runtimeOptions": {
-    "additionalProbingPaths": [
-      "C:\\Users\\gobo\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\gobo\\.nuget\\packages"
-    ]
-  }
-}
