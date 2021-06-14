@@ -37,9 +37,21 @@ namespace Progen
             }
 
             //PRINTING GENERATED HUMANS
-            for (int i = 0; (i < list.Length ); i++)
+            for (int i = 0; (i < list.Length); i++)
             {
-                Console.WriteLine("[" + (i+ 1) + "]" + list[i].FName + " " + list[i].LName + " " + list[i].Gender + " " + list[i].Age + ", " + "Childhood: " + list[i].Childhood + " Adulthood:" + list[i].Adulthood);
+                Console.Write("[" + (i + 1) + "] ");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write(list[i].FName + " " + list[i].LName + "(" + list[i].Age + "), ");
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                if(list[i].Age < 20)
+                {
+                    Console.Write(list[i].Childhood);
+                } else
+                {
+                    Console.Write(list[i].Adulthood);
+                }
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine();
             }
         
 
