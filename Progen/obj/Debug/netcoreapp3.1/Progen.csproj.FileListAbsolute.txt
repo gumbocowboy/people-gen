@@ -1,0 +1,13 @@
+C:\Users\gobo\source\repos\Progen\Progen\bin\Debug\netcoreapp3.1\Progen.exe
+C:\Users\gobo\source\repos\Progen\Progen\bin\Debug\netcoreapp3.1\Progen.deps.json
+C:\Users\gobo\source\repos\Progen\Progen\bin\Debug\netcoreapp3.1\Progen.runtimeconfig.json
+C:\Users\gobo\source\repos\Progen\Progen\bin\Debug\netcoreapp3.1\Progen.runtimeconfig.dev.json
+C:\Users\gobo\source\repos\Progen\Progen\bin\Debug\netcoreapp3.1\Progen.dll
+C:\Users\gobo\source\repos\Progen\Progen\bin\Debug\netcoreapp3.1\Progen.pdb
+C:\Users\gobo\source\repos\Progen\Progen\obj\Debug\netcoreapp3.1\Progen.csprojAssemblyReference.cache
+C:\Users\gobo\source\repos\Progen\Progen\obj\Debug\netcoreapp3.1\Progen.AssemblyInfoInputs.cache
+C:\Users\gobo\source\repos\Progen\Progen\obj\Debug\netcoreapp3.1\Progen.AssemblyInfo.cs
+C:\Users\gobo\source\repos\Progen\Progen\obj\Debug\netcoreapp3.1\Progen.csproj.CoreCompileInputs.cache
+C:\Users\gobo\source\repos\Progen\Progen\obj\Debug\netcoreapp3.1\Progen.dll
+C:\Users\gobo\source\repos\Progen\Progen\obj\Debug\netcoreapp3.1\Progen.pdb
+C:\Users\gobo\source\repos\Progen\Progen\obj\Debug\netcoreapp3.1\Progen.genruntimeconfig.cache

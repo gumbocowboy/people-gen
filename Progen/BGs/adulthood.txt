@@ -1,0 +1,24 @@
+Slave Trade
+Salary Worker
+Homemaker
+Soldier
+Doctor
+Artist
+I.T. Consultant
+Programmer
+Drug Dealer
+Burnout
+Janitor
+Math Teacher
+Gym Teacher
+Retail Worker
+Arms Dealer
+Government Official
+Spy
+Nurse
+Dentist
+Gamer
+Translator
+Adventurer
+Musician
+Astronaut
