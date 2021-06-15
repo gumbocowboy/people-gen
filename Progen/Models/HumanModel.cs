@@ -113,6 +113,10 @@ namespace Progen.Models
             return age;
         }
 
+        /// <summary>
+        /// Pulls a random childhood from txt file
+        /// </summary>
+        /// <returns>Childhood as string</returns>
         public string AssignChildhood()
         {
             var bgs = File.ReadAllLines("..\\..\\..\\BGs\\childhood.txt");
@@ -128,6 +132,56 @@ namespace Progen.Models
             var ret = bgs[r];
             return ret.ToString();
 
+        }
+
+
+        public HumanModel GenSettler()
+        {
+            HumanModel h = new HumanModel();
+            Appear a = new Appear();
+
+            h.Gender = h.AssignGender();
+            h.FName = h.AssignFirstName(h);
+            h.LName = h.AssignLastName(h);
+            while(h.Age <= 15)
+            {
+                h.Age = h.AssignAge();
+            }
+            h.Childhood = h.AssignChildhood();
+            if (h.Age >= 20)
+            {
+                h.Adulthood = h.AssignAdulthood();
+            }
+            h.Appear = a;
+            h.Appear = h.Appear.GenerateAppear();
+            return h;
+        }
+
+
+        /// <summary>
+        /// Randomly Generates a Human of random age.
+        /// </summary>
+        /// <returns>Single Human</returns>
+        public HumanModel GenAny()
+        {
+            //Creating models to be assigned values from Model Methods
+            HumanModel gen = new HumanModel();
+            Appear app = new Appear();
+
+            //Assigning Generated information
+            gen.Gender = gen.AssignGender();
+            gen.FName = gen.AssignFirstName(gen);
+            gen.LName = gen.AssignLastName(gen);
+            gen.Age = gen.AssignAge();
+            gen.Childhood = gen.AssignChildhood();
+            if (gen.Age >= 20)
+            {
+                gen.Adulthood = gen.AssignAdulthood();
+            }
+            gen.Appear = app;
+            gen.Appear = gen.Appear.GenerateAppear();
+
+            return gen;
         }
 
     }

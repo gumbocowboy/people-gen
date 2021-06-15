@@ -24,41 +24,16 @@ namespace Progen
             //----------------------------------------------------------
             for (int i = 0; i < GenAmt; i++)
             {
-
-                list[i] = GenerateSingleHuman();
+                HumanModel h = new HumanModel();
+                h = h.GenSettler();
+                list[i] = h;
             }
 
             MainSelectorDisplay(list);
 
-            
-
-
-
-
-
         }
 
-        public static HumanModel GenerateSingleHuman()
-        {
-            //Creating models to be assigned values from Model Methods
-            HumanModel gen = new HumanModel();
-            Appear app = new Appear();
 
-            //Assigning Generated information
-            gen.Gender = gen.AssignGender();
-            gen.FName = gen.AssignFirstName(gen);
-            gen.LName = gen.AssignLastName(gen);
-            gen.Age = gen.AssignAge();
-            gen.Childhood = gen.AssignChildhood();
-            if (gen.Age >= 20)
-            {
-                gen.Adulthood = gen.AssignAdulthood();
-            }
-            gen.Appear = app;
-            gen.Appear = gen.Appear.GenerateAppear();
-
-            return gen;
-        }
 
         public static void MainSelectorDisplay(HumanModel[] list)
         {
@@ -113,10 +88,11 @@ namespace Progen
             }
             disp.FullDisplay(list[humanSelect - 1]);
             Console.WriteLine("Press R to return to the list, or anything else to exit.");
-            if (Console.ReadLine() == "R" || Console.ReadLine() == "r")
+            if (Console.ReadLine().ToUpper() == "R")
             {
                 Console.Clear();
                 MainSelectorDisplay(list);
+
             }
 
 
