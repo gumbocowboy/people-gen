@@ -17,8 +17,9 @@
 
 ## Author
 Adumb Bomb
+
 [@adumb_bomb](https://twitter.com/adumb_bomb)
-<<<<<<< HEAD
+
 [kd3ts.com](https://kd3ts.com)
 
 ## Original Idea DO NOT STEAL.
@@ -27,4 +28,4 @@ Adumb Bomb
 [kd3ts.com](https://kd3ts.com)
 
 Original Idea DO NOT STEAL (lol).
->>>>>>> 75f0e694da13a83a3c00df8584e32c9351b428cc
+
