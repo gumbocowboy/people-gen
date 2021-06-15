@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+/// <summary>
+/// Currently unused
+/// </summary>
 namespace Progen.Models
 {
     public class Background

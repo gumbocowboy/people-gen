@@ -10,6 +10,6 @@
 ## Author
 Adumb Bomb
 [@adumb_bomb](https://twitter.com/adumb_bomb)
-[kd3ts.com] (https://kd3ts.com)
+[kd3ts.com](https://kd3ts.com)
 
-##Original Idea DO NOT STEAL.
+## Original Idea DO NOT STEAL.

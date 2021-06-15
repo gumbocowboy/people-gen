@@ -18,6 +18,7 @@ namespace Progen.Models
         public HumanModel[] Children { get; set; }
         public string Childhood { get; set; }
         public string Adulthood { get; set; }
+        public Appear Appear { get; set; }
 
 
         Random rand = new Random();
