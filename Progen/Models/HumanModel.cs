@@ -19,6 +19,7 @@ namespace Progen.Models
         public string Childhood { get; set; }
         public string Adulthood { get; set; }
         public Appear Appear { get; set; }
+        public Health Health { get; set; }
 
 
         Random rand = new Random();
@@ -134,11 +135,15 @@ namespace Progen.Models
 
         }
 
-
+        /// <summary>
+        /// Generates a Settler to begin advancing the timeline.
+        /// </summary>
+        /// <returns></returns>
         public HumanModel GenSettler()
         {
             HumanModel h = new HumanModel();
             Appear a = new Appear();
+            Health he = new Health();
 
             h.Gender = h.AssignGender();
             h.FName = h.AssignFirstName(h);
@@ -154,6 +159,8 @@ namespace Progen.Models
             }
             h.Appear = a;
             h.Appear = h.Appear.GenerateAppear();
+            h.Health = he;
+            h.Health = h.Health.InitHealth();
             return h;
         }
 
@@ -167,6 +174,7 @@ namespace Progen.Models
             //Creating models to be assigned values from Model Methods
             HumanModel gen = new HumanModel();
             Appear app = new Appear();
+            Health h = new Health();
 
             //Assigning Generated information
             gen.Gender = gen.AssignGender();
@@ -180,6 +188,10 @@ namespace Progen.Models
             }
             gen.Appear = app;
             gen.Appear = gen.Appear.GenerateAppear();
+            gen.Health = h;
+            gen.Health = gen.Health.InitHealth();
+            
+            
 
             return gen;
         }

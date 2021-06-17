@@ -8,6 +8,10 @@ namespace Progen
 {
     class HumanDisplayer
     {
+        /// <summary>
+        /// Displays all information on a single Human
+        /// </summary>
+        /// <param name="h">Human to be displayed</param>
         public void FullDisplay(HumanModel h)
         {
             string gSingular;
@@ -42,6 +46,13 @@ namespace Progen
                 Console.WriteLine(gSingular + " would become a " + h.Adulthood +
                     " later in life.");
             }
+            Console.WriteLine("Health");
+            Console.WriteLine("Head: " + h.Health.Head);
+            Console.WriteLine("Torso: " + h.Health.Torso);
+            Console.WriteLine("Left Arm: " + h.Health.LArm);
+            Console.WriteLine("Right Arm : " + h.Health.RArm);
+            Console.WriteLine("Left Leg: " + h.Health.LLeg);
+            Console.WriteLine("Right Leg: " + h.Health.RLeg);
 
 
         }
